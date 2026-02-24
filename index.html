@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guilherme Ribeiro | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Bolhas de fundo -->
+    <div class="bubbles" aria-hidden="true">
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+      <span class="bubble"></span>
+    </div>
+
+    <header class="header">
+      <a href="#inicio" class="logo">
+        <span class="logo-accent">PORT</span>FÓLIO
+      </a>
+      <nav class="nav">
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <p class="hero-greeting">Olá, meu nome é</p>
+        <h1 class="hero-name">
+          <span class="name-accent">Guilherme</span> Ribeiro
+        </h1>
+        <p class="hero-role">Full Stack Developer</p>
+        <a
+          href="curriculo/Curriculo_Guilherme_Ribeiro.pdf"
+          class="btn btn-primary"
+          download
+          >Baixar Currículo</a
+        >
+      </section>
+
+      <section id="sobre" class="section about">
+        <h2 class="section-title">Sobre Mim</h2>
+        <blockquote class="about-quote">
+          "Dados e código para simplificar o complexo"
+        </blockquote>
+        <p class="about-text">
+          Profissional de TI em transição para desenvolvimento de software, com
+          formação em Análise e Desenvolvimento de Sistemas e Pós em Full Stack.
+          Experiência em análise de dados, relatórios técnicos e gestão de
+          equipes. Atuo com ReactJS, React Native, Flutter, Python e Power BI,
+          buscando aplicar raciocínio lógico e habilidades técnicas em projetos
+          inovadores.
+        </p>
+      </section>
+
+      <section id="projetos" class="section projects">
+        <h2 class="section-title">Projetos em Destaque</h2>
+
+        <article class="project-card" data-animate>
+          <div class="project-header">
+            <h3>Aplicações web com ReactJS</h3>
+            <span class="project-badge">Projeto</span>
+          </div>
+          <p class="project-desc">
+            Projetos de front-end e full stack no GitHub, com foco em estrutura
+            de código e performance.
+          </p>
+          <button class="project-stacks-toggle" aria-expanded="false">
+            <span class="toggle-icon">▼</span> Stacks
+          </button>
+          <div class="project-stacks" hidden>
+            React | JavaScript | HTML | CSS
+          </div>
+        </article>
+
+        <article class="project-card" data-animate>
+          <div class="project-header">
+            <h3>Dashboards e análise de dados</h3>
+            <span class="project-badge">Projeto</span>
+          </div>
+          <p class="project-desc">
+            Visualização de dados e relatórios com Power BI para análise e
+            tomada de decisão.
+          </p>
+          <button class="project-stacks-toggle" aria-expanded="false">
+            <span class="toggle-icon">▼</span> Stacks
+          </button>
+          <div class="project-stacks" hidden>Power BI | SQL | MySQL</div>
+        </article>
+      </section>
+
+      <section id="habilidades" class="section skills">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-tags" data-animate>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React / ReactJS</span>
+          <span class="skill-tag">React Native</span>
+          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </section>
+
+      <section id="contato" class="section contact">
+        <h2 class="section-title">Vamos criar algo grande?</h2>
+        <div class="contact-links">
+          <a
+            href="https://github.com/gribeiro239"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/guilherme-ribeiro-93165b196/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link"
+            >LinkedIn</a
+          >
+          <a href="mailto:gribeiro239@gmail.com" class="contact-link">E-mail</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Guilherme Ribeiro — Campinas, SP</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
